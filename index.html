@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Information System.....</title>
+        <link rel="stylesheet" href="Style.css">
+        <link rel="shortcut icon" href="Reva1.JPG" type="image/x-icon">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();onFormSubmit();"autocomplete="off">
+                        <div>
+                            <label>Name *</label>
+                            <label class="validation-error hide" id="FullnameValidationError">Name is required.</label>
+                            <input type="text" name="Fullname" id="Fullname" minlength="4" maxlength="30" placeholder="Prince Kumar" spellcheck="true" autofocus>
+                        </div> 
+                            <div>
+                                <label>SRN No *</label>
+                                <input type="text" name="SRNno" id="SRNno" minlength="8" maxlength="10" placeholder="R21DE179">
+                            </div>
+                        <div>
+                            <label>Phone No *</label>
+                            <input type="tel" name="Phoneno" id="Phoneno" maxlength="10" minlength="10" placeholder="9142382053">
+                        </div>
+                            <div>
+                                <label>Email id *</label>
+                                <input type="email" name="Emailid" id="Emailid" size="35" placeholder="princesinha2018@gmail.com">
+                            </div>      
+                        <div class="form-action-buttons"> 
+                                <input type="submit" value="Submit">
+                                <input type="reset" value="Reset">
+                        </div>
+                    </form>
+                </td>
+                    <td>
+                        <table class="list" id="StudentList">
+                            <h3 style="color: white;">Student Details</h3>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>SRN No</th>
+                                    <th>Phone No</th>
+                                    <th>Email Id</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                                <tbody>
+
+                                </tbody>
+                        </table>
+                    </td>
+            </tr>
+        </table>
+        <script src="Script.js"></script>
+    </body>
+</html>
